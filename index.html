@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tip Calculator</title>
     <link rel="stylesheet" href="style.css">
+    <script src="./main.js" defer></script>
 </head>
 <body>
     <header>
@@ -26,11 +27,11 @@
                 <strong>Select Tip %</strong>
 
                 <div>
-                    <button>5%</button>
-                    <button>10%</button>
-                    <button>15%</button>
-                    <button>25%</button>
-                    <button>50%</button>
+                    <button onclick="receiveTipPercentage(5)" id="button-5">5%</button>
+                    <button onclick="receiveTipPercentage(10)" id="button-10">10%</button>
+                    <button onclick="receiveTipPercentage(15)" id="button-15">15%</button>
+                    <button onclick="receiveTipPercentage(25)" id="button-25">25%</button>
+                    <button onclick="receiveTipPercentage(50)" id="button-50">50%</button>
                     <input type="number" id="custom-tip" placeholder="Custom">
                 </div>
             </div>
