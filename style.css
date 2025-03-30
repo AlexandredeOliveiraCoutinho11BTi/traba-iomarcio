@@ -161,6 +161,10 @@ main {
 
 } 
 
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+    display: none;
+
 @media(min-width: 920px) {
     main {
         display: flex;
@@ -175,9 +179,7 @@ main {
     section {
         width: 100%;
     }
-    input::-webkit-inner-spin-button,
-    input::-webkit-outer-spin-button {
-        display: none;
+
     }
     .info {
     .tip {
@@ -185,7 +187,7 @@ main {
             grid-template-columns: repeat(3, 1fr);
 
             button:hover {
-                background: var(--topaz);
+                background: var(--water-leaf);
                 transition: .3s;
                 cursor: pointer;
             }
