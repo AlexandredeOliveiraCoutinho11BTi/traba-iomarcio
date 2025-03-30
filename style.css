@@ -164,8 +164,9 @@ main {
 input::-webkit-inner-spin-button,
 input::-webkit-outer-spin-button {
     display: none;
+}
 
-@media(min-width: 920px) {
+@media (min-width: 920px) {
     main {
         display: flex;
         max-width: 92rem;
@@ -173,48 +174,37 @@ input::-webkit-outer-spin-button {
         border-radius: 2.5rem;
         gap: 4.8rem;
         padding: 4.8rem;
-
     }
 
     section {
         width: 100%;
     }
 
+    .info .tip div {
+        grid-template-columns: repeat(3, 1fr);
     }
-    .info {
-    .tip {
-        div {
-            grid-template-columns: repeat(3, 1fr);
 
-            button:hover {
-                background: var(--water-leaf);
-                transition: .3s;
-                cursor: pointer;
-            }
-        }
+    .info .tip div button:hover {
+        background: var(--water-leaf);
+        transition: .3s;
+        cursor: pointer;
     }
-}
+
     .results {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         padding: 5.6rem 4rem 4rem;
-
-        .amount,
-        .total {
-             strong {
-            font-size: 4.8rem;
-
-
-            }
-        }
-
-        button:hover {
-                background: var(--water-leaf);
-                transition: .3s;
-                cursor: pointer;
-
-        
     }
+
+    .results .amount strong,
+    .results .total strong {
+        font-size: 4.8rem;
+    }
+
+    .results button:hover {
+        background: var(--water-leaf);
+        transition: .3s;
+        cursor: pointer;
     }
 }
